@@ -89,6 +89,66 @@ const people = [
     image:
       'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
+  {
+    name: 'Lindsay Walton',
+    professional_experience_job: 'Front-end Developer',
+    professional_experience_company: 'Google',
+    education_degree: 'Computer Science (B.Sc.)',
+    education_school: 'TUM',
+    email: 'lindsay.walton@example.com',
+    role: 'CEO',
+    linkedin: 'https://www.linkedin.com/in/lindsaywalton/',
+    image:
+      'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    name: 'Lindsay Walton',
+    professional_experience_job: 'Front-end Developer',
+    professional_experience_company: 'Google',
+    education_degree: 'Computer Science (B.Sc.)',
+    education_school: 'TUM',
+    email: 'lindsay.walton@example.com',
+    role: 'CEO',
+    linkedin: 'https://www.linkedin.com/in/lindsaywalton/',
+    image:
+      'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    name: 'Lindsay Walton',
+    professional_experience_job: 'Front-end Developer',
+    professional_experience_company: 'Google',
+    education_degree: 'Computer Science (B.Sc.)',
+    education_school: 'TUM',
+    email: 'lindsay.walton@example.com',
+    role: 'CEO',
+    linkedin: 'https://www.linkedin.com/in/lindsaywalton/',
+    image:
+      'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    name: 'Lindsay Walton',
+    professional_experience_job: 'Front-end Developer',
+    professional_experience_company: 'Google',
+    education_degree: 'Computer Science (B.Sc.)',
+    education_school: 'TUM',
+    email: 'lindsay.walton@example.com',
+    role: 'CEO',
+    linkedin: 'https://www.linkedin.com/in/lindsaywalton/',
+    image:
+      'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    name: 'Lindsay Walton',
+    professional_experience_job: 'Front-end Developer',
+    professional_experience_company: 'Google',
+    education_degree: 'Computer Science (B.Sc.)',
+    education_school: 'TUM',
+    email: 'lindsay.walton@example.com',
+    role: 'CEO',
+    linkedin: 'https://www.linkedin.com/in/lindsaywalton/',
+    image:
+      'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
   // More people...
 ]
 </script>

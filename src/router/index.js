@@ -13,6 +13,7 @@ const routes = [
   { path: '/founders', component: Founders, name: 'Founders' },
   { path: '/startups', component: Startups, name: 'Startups' },
   { path: '/founders/:email', component: () => import('../views/FounderDetail.vue') },
+  { path: '/startups/:startupName', name: 'startupDetail', component: () => import('../views/StartupDetail.vue'), props: true },
 ];
 
 // Create the router instance
