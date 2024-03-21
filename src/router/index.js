@@ -7,11 +7,12 @@ const Startups = () => import('../views/Startups.vue');
 
 // Define routes
 const routes = [
+  // Redirect to /dashboard as a default route
+  { path: '/', redirect: '/dashboard' },
   { path: '/dashboard', component: Dashboard, name: 'Dashboard' },
   { path: '/founders', component: Founders, name: 'Founders' },
   { path: '/startups', component: Startups, name: 'Startups' },
-  // Redirect to /dashboard as a default route
-  { path: '/', redirect: '/dashboard' },
+  { path: '/founders/:email', component: () => import('../views/FounderDetail.vue') },
 ];
 
 // Create the router instance
