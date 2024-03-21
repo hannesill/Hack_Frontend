@@ -1,4 +1,3 @@
-
 <template>
   <div>
     <TransitionRoot as="template" :show="sidebarOpen">
@@ -53,7 +52,7 @@
     <!-- Static sidebar for desktop -->
     <div class="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-60 lg:flex-col">
       <!-- Sidebar component, swap this element with another sidebar if you like -->
-      <div class="flex grow flex-col gap-y-5 overflow-y-auto bg-black/10 px-6 pb-4 pt-4">
+      <div class="flex grow flex-col gap-y-5 overflow-y-auto bg-black/20 px-6 pb-4 pt-4">
         <div class="flex h-16 shrink-0 items-center">
           <img class="h-12 w-auto" src="../resources/sg-logo.svg" alt="Your Company" />
         </div>
@@ -114,6 +113,7 @@ import {
   UsersIcon,
   RocketLaunchIcon
 } from '@heroicons/vue/24/outline'
+import CommandPalette from "@/components/CommandPalette.vue";
 
 const navigation = [
   { name: 'Dashboard', href: '/dashboard', icon: ChartBarIcon, current: true },

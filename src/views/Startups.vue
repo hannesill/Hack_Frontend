@@ -26,15 +26,19 @@
               </tr>
             </thead>
             <tbody class="divide-y divide-gray-400">
-              <tr v-for="startup in startups" :key="startup.name">
+              <tr v-for="startup in startups" :key="startup.id">
                 <td class="whitespace-nowrap py-5 pl-4 pr-3 text-sm sm:pl-0">
                   <div class="flex items-center">
                     <div class="h-11 w-11 flex-shrink-0">
                       <img class="h-11 w-11 rounded-full" :src="startup.logo" alt="" />
                     </div>
-                    <div class="ml-4 cursor-pointer" @click="goToStartup(startup.name)">
-                      <div class="font">{{ startup.name }}</div>
-                      <div class="mt-1 text-gray-400">{{ startup.cofounders }}</div>
+                    <div class="ml-4 cursor-pointer" @click="goToStartup(startup.startupName)">
+                      <div class="font">{{ startup.startupName }}</div>
+                      <div class="mt-1 text-gray-400">
+                        <span v-for="(founder, index) in startup.founders" :key="founder">
+                          {{ founder }}<span v-if="index < startup.founders.length - 1">, </span>
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </td>
@@ -67,6 +71,14 @@
 
 <script setup>
 import { useRouter } from 'vue-router';
+import { computed } from 'vue';
+import { useStore } from 'vuex';
+
+const store = useStore();
+
+const startups = computed(() => {
+  return store.getters.getAllStartups;
+});
 
 const router = useRouter();
 
@@ -74,18 +86,4 @@ function goToStartup(name) {
   router.push(`/startups/${name}`);
 }
 
-const startups = [
-  {
-    name: 'To the moon GmbH',
-    cofounders: ['Lindsay Walton', 'Tom Cook'],
-    description: 'Building robots that fly to the moon with the power of JavaScript.',
-    phase: 'Seed',
-    industry: 'Robotics',
-    status: 'Active',
-    linkedin: 'https://www.linkedin.com/in/lindsaywalton/',
-    logo:
-      'src/resources/icons8-moon-phase-96.png',
-  },
-  // More people...
-]
 </script>

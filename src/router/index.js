@@ -12,8 +12,8 @@ const routes = [
   { path: '/dashboard', component: Dashboard, name: 'Dashboard' },
   { path: '/founders', component: Founders, name: 'Founders' },
   { path: '/startups', component: Startups, name: 'Startups' },
-  { path: '/founders/:email', component: () => import('../views/FounderDetail.vue') },
-  { path: '/startups/:startupName', name: 'startupDetail', component: () => import('../views/StartupDetail.vue'), props: true },
+  { path: '/founders/:name', name: 'founderDetail', component: () => import('../views/FounderDetail.vue') },
+  { path: '/startups/:startupName', name: 'startupDetail', component: () => import('../views/StartupDetail.vue') },
 ];
 
 // Create the router instance
